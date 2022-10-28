@@ -1,0 +1,10 @@
+text = open("text.txt","r")
+myfile = open("myfile.txt","w")
+line = text.readline()
+words = line.split()
+for word in words:
+    print(word)
+    myfile.write(word+"\n")
+
+text.close()
+myfile.close()
